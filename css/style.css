@@ -1,0 +1,217 @@
+body {
+
+.portfolio2-section {
+    height: 100vh;
+    width: 100%;
+    
+    /* Radial gradient added BEFORE the image URL */
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/portfolio2bg.png) no-repeat center center/cover;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+.portfolio-section {
+    height: 100vh;
+    width: 100%;
+    
+    /* Radial gradient added BEFORE the image URL */
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/portfoliobg.png) no-repeat center center/cover;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+  .glass-container {
+    /* The "Black Glass" effect */
+    background: rgba(0, 0, 0, 0.4);          /* Translucent black */
+    backdrop-filter: blur(12px);            /* The frosted blur effect */
+    -webkit-backdrop-filter: blur(12px);    /* Safari support */
+    
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle highlight on the edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glass-text {
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  /*-----------------------------------------------------------------*/
+
+  .vultrix-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/vultrixbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+   /*-----------------------------------------------------------------*/
+
+   .weave-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/weavebg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+  /*-----------------------------------------------------------------*/
+
+   .ghibli-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/ghiblibg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+  /*-----------------------------------------------------------------*/
+
+   .aiart-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/aiartbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+   /*-----------------------------------------------------------------*/
+
+   .cute-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/cutebg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+  /*-----------------------------------------------------------------*/
+
+   .epic-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/epicbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+    /*-----------------------------------------------------------------*/
+
+   .prompt-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/promptbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+     /*-----------------------------------------------------------------*/
+
+    .travel-section {
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/travelbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
+    
+    /* Flexbox positioning */
+    display: flex;
+    align-items: flex-end;    /* Pushes content to the bottom */
+    justify-content: flex-start; /* Pushes content to the left */
+    padding: 40px;            /* Adds "breathing room" from the edges */
+    box-sizing: border-box;
+  }
+
+     /*-----------------------------------------------------------------*/
+
+
+  /* Container just to center the button for the demo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* The Explore Button Styling */
+        .explore-btn {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #2563eb; /* A nice modern blue */
+            border: none;
+            border-radius: 50px; /* Rounded pill shape */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Hover Effects */
+        .explore-btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px); /* Slight lift */
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Active/Click Effect */
+        .explore-btn:active {
+            transform: translateY(0);
+        }
+
+        /*-----------------------------------------------------------------*/
+
+
+ 
