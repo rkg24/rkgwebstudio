@@ -13,9 +13,7 @@
           rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,600;1,400&family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/hover.css" rel="stylesheet" />
-    <link href="css/bento.css" rel="stylesheet" />
-    <link href="css/modal.css" rel="stylesheet" />
+    <link href="css/upbutton.css" rel="stylesheet" />
     <link rel="icon" href="images/logo.jpg" sizes="any">
     <link rel="icon" type="image/svg+xml" href="images/logo.jpg">
     <link rel="apple-touch-icon" href="images/logo.jpg">
@@ -237,14 +235,23 @@
     <a href="https://ryangarcia24.wordpress.com/" target="_blank" class="explore-btn">Explore</a>
   </div>
 </section>
-  
+
+
+ 
 
     <!------------------------------------>
 
  
+
+
+ 
     <!-- Footer -->
 
+
+
 <section>
+
+<button id="scrollTopBtn" title="Go to top">&#8593;</button>
 
 <nav class="navbar navbar-expand-sm navbar-dark" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; background-color: #000000 !important;">
      <div class="container-fluid justify-content-center">
@@ -255,8 +262,31 @@
 </nav>
 
 
+   <script>
+                // Paste the JavaScript code here
+                const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-<script>
+                // Show the button when the user scrolls down 200px from the top
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                        scrollTopBtn.style.display = "block";
+                    } else {
+                        scrollTopBtn.style.display = "none";
+                    }
+                };
+
+                // When the user clicks the button, scroll to the top
+                scrollTopBtn.addEventListener("click", () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth" // This creates the smooth gliding effect
+                    });
+                });
+            
+
+
+
+
             function changeBg(imageUrl) {
     const section = document.querySelector('.portfolio-section');
     
