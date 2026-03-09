@@ -60,7 +60,7 @@ body {
 
   .glass-container {
     /* The "Black Glass" effect */
-    background: rgba(0, 0, 0, 0.4);          /* Translucent black */
+    background: rgba(0, 0, 0, .01);          /* Translucent black */
     backdrop-filter: blur(12px);            /* The frosted blur effect */
     -webkit-backdrop-filter: blur(12px);    /* Safari support */
     
