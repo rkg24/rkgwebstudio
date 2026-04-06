@@ -223,6 +223,50 @@ h1.glass-text {
     box-shadow: 0 0 5px #00f3ff;
 }
 
+/*-----------------------------------------------------------------------------*/
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0) !important; /* Fully transparent */
+    backdrop-filter: blur(10px); /* Blurs the background behind the menu */
+    border: 1px solid var(--neon-cyan); /* Keeps the neon outline */
+}
+
+/* Custom Cyberpunk Hover for Dropdown Items */
+.dropdown-item {
+    color: #00f3ff !important; /* Base Neon Cyan */
+    background: transparent !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth "pop" effect */
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dropdown-item:hover {
+    color: #ffffff !important;
+    background-color: rgba(0, 243, 255, 0.1) !important; /* Very faint cyan tint */
+    padding-left: 25px; /* Slide text to the right */
+    text-shadow: 0 0 8px #00f3ff, 0 0 12px #00f3ff; /* Neon Text Glow */
+}
+
+/* The "Power Bar" Accent on the left */
+.dropdown-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #ff00ff; /* Neon Magenta */
+    box-shadow: 0 0 15px #ff00ff;
+    transition: width 0.2s ease;
+}
+
+.dropdown-item:hover::before {
+    width: 5px; /* Reveals a glowing magenta bar on hover */
+}
+
+
 /* Responsive Fix: Stacked items bg */
 @media (max-width: 991px) {
     .navbar-collapse {
