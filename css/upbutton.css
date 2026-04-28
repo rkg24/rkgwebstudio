@@ -295,7 +295,7 @@ h1.glass-text {
 /* Ensure the parent section allows absolute positioning */
 .portfolio3-section {
   position: relative;
-  height: 100vh;      /* Or whatever height your section is */
+  height: 100svh; /* More reliable for mobile */
   overflow: hidden;
 }
 
