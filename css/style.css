@@ -437,3 +437,85 @@ body {
         justify-content: center;
     }
 }
+
+
+       /*-----------------------------------------------------------------*/ 
+
+
+/* Container to hold both button and popup */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px; /* Space for the popup to appear above */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The Button Styling */
+.explore-btn {
+  padding: 12px 30px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #4500b0;
+  transform: scale(1.05);
+}
+
+/* The Pop-up Box */
+.popup-box {
+  position: absolute;
+  bottom: 125%; /* Positions it above the button */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 220px;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  
+  /* Hidden by default */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none; /* Prevents flickering when moving mouse */
+}
+
+/* The small arrow at the bottom of the popup */
+.popup-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show the popup on hover */
+.button-wrapper:hover .popup-box {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Text Styles */
+.popup-title {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  color: #bb86fc;
+}
+
+.popup-desc {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
