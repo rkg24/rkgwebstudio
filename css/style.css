@@ -37,9 +37,9 @@ body {
   
   /* Media query for mobile devices (typically 768px and below) */
 @media (max-width: 768px) {
-  .hero-section {
+  .portfolio3-section {
     background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
-                url(../images/hero2.png) no-repeat center center/cover;
+                url(../images/hero3mobile.png) no-repeat center center/cover;
   }
 }
 
@@ -54,6 +54,14 @@ body {
     padding: 40px;
     box-sizing: border-box;
     overflow: hidden; /* Prevents video spillover */
+}
+
+ /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .portfolio2-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/portfoliobgmobile.png) no-repeat center center/cover;
+  }
 }
 
 /* Make the video fill the entire section */
@@ -102,6 +110,16 @@ body {
     box-sizing: border-box;
 }
 
+ /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .portfolio-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/portfoliobg1mobile.png) no-repeat center center/cover;
+  }
+}
+
+ /*-----------------------------------------------------------------*/
+
   .glass-container {
     /* The "Black Glass" effect */
     background: rgba(0, 0, 0, .01);          /* Translucent black */
@@ -135,6 +153,14 @@ body {
     overflow: hidden; /* Prevents video spillover */
 }
 
+/* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .vultrix-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/vultrixbgmobile.png) no-repeat center center/cover;
+  }
+}
+
 
    /*-----------------------------------------------------------------*/
 
@@ -150,6 +176,14 @@ body {
     padding: 40px;            /* Adds "breathing room" from the edges */
     box-sizing: border-box;
   }
+  
+  /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .weave-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/weavebgmobile.png) no-repeat center center/cover;
+  }
+}
 
   /*-----------------------------------------------------------------*/
 
@@ -165,10 +199,19 @@ body {
     padding: 40px;            /* Adds "breathing room" from the edges */
     box-sizing: border-box;
   }
+  
+      /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .ghibli-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/ghiblibgmobile.png) no-repeat center center/cover;
+  }
+}
 
-  /*-----------------------------------------------------------------*/
 
-  .vultrix-section {
+   /*-----------------------------------------------------------------*/
+   
+  .aiart-section {
     position: relative; /* Essential for absolute children */
     height: 100vh;
     width: 100%;
@@ -179,6 +222,15 @@ body {
     box-sizing: border-box;
     overflow: hidden; /* Prevents video spillover */
 }
+
+/* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .aiart-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/aiartbgmobile.png) no-repeat center center/cover;
+  }
+}
+
 
    /*-----------------------------------------------------------------*/
 
@@ -194,6 +246,14 @@ body {
     padding: 40px;            /* Adds "breathing room" from the edges */
     box-sizing: border-box;
   }
+  
+    /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .cute-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/cutebgmobile.png) no-repeat center center/cover;
+  }
+}
 
   /*-----------------------------------------------------------------*/
 
@@ -209,21 +269,37 @@ body {
     padding: 40px;            /* Adds "breathing room" from the edges */
     box-sizing: border-box;
   }
+  
+    /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .epic-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/epicbgmobile.png) no-repeat center center/cover;
+  }
+}
 
     /*-----------------------------------------------------------------*/
 
-   .prompt-section {
-    height: 100vh; /* Adjust height as needed */
+ 
+    .prompt-section {
+    position: relative; /* Essential for absolute children */
+    height: 100vh;
     width: 100%;
-    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url(../images/promptbg.png) no-repeat center center/cover; /* Glass needs a background to pop! */
-    
-    /* Flexbox positioning */
     display: flex;
-    align-items: flex-end;    /* Pushes content to the bottom */
-    justify-content: flex-start; /* Pushes content to the left */
-    padding: 40px;            /* Adds "breathing room" from the edges */
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
     box-sizing: border-box;
+    overflow: hidden; /* Prevents video spillover */
+}
+  
+      /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .prompt-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/promptbgmobile.png) no-repeat center center/cover;
   }
+}
 
      /*-----------------------------------------------------------------*/
 	 
@@ -240,6 +316,14 @@ body {
     box-sizing: border-box;
 }
 
+      /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .purepath-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/purepathmobile.png) no-repeat center center/cover;
+  }
+}
+
   /*-----------------------------------------------------------------*/
 
     .travel-section {
@@ -254,6 +338,14 @@ body {
     padding: 40px;            /* Adds "breathing room" from the edges */
     box-sizing: border-box;
   }
+  
+     /* Media query for mobile devices (typically 768px and below) */
+@media (max-width: 768px) {
+  .travel-section {
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), 
+                url(../images/travelbgmobile.png) no-repeat center center/cover;
+  }
+}
 
      /*-----------------------------------------------------------------*/
 
