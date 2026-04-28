@@ -440,82 +440,96 @@ body {
 
 
        /*-----------------------------------------------------------------*/ 
+	   
+/*Explore Button Pop-up Box*/
 
-
-/* Container to hold both button and popup */
 .button-wrapper {
   position: relative;
   display: inline-block;
-  margin-top: 100px; /* Space for the popup to appear above */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 150px; /* Space for the popup */
 }
 
-/* The Button Styling */
-.explore-btn {
-  padding: 12px 30px;
-  background-color: #6200ea;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
-}
-
-.explore-btn:hover {
-  background-color: #4500b0;
-  transform: scale(1.05);
-}
-
-/* The Pop-up Box */
-.popup-box {
-  position: absolute;
-  bottom: 125%; /* Positions it above the button */
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  width: 220px;
-  padding: 15px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  
-  /* Hidden by default */
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  pointer-events: none; /* Prevents flickering when moving mouse */
-}
-
-/* The small arrow at the bottom of the popup */
-.popup-arrow {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -8px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-
-/* Show the popup on hover */
-.button-wrapper:hover .popup-box {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* Text Styles */
 .popup-title {
-  margin: 0 0 5px 0;
-  font-size: 1rem;
-  color: #bb86fc;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #00ff41;
 }
 
 .popup-desc {
-  margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 15px;
   line-height: 1.4;
-  color: #e0e0e0;
+}
+
+/* The GO Button inside the popup */
+.go-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #00ff41;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.go-btn:hover {
+  background: #fff;
+  box-shadow: 0 0 15px #00ff41;
+}
+
+
+.cyber-btn {
+  cursor: pointer;
+}
+
+          
+/* Ensure the section is the reference point */
+.portfolio-section {
+  position: relative;
+  min-height: 400px; /* Adjust based on your design */
+  padding: 20px;
+}
+
+/* Position the wrapper at the top left */
+.top-left-anchor {
+  position: absolute;
+  top: 80px;  /* Increased from 0 so the pop-up has room to appear ABOVE */
+  left: 30px; /* Distance from the left edge */
+  z-index: 100;
+}
+
+/* Adjust the popup to align with the left-aligned button */
+.popup-box {
+  position: absolute;
+  bottom: 130%; 
+  left: 0;           /* Aligns the left edge of popup with left edge of button */
+  transform: translateY(15px); /* Removed translateX(-50%) to keep it left-aligned */
+  width: 280px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  background: rgba(15, 15, 15, 0.95);
+  border: 1px solid #00ff41;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Active state for the popup */
+.popup-box.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Adjust arrow to the left side since popup is no longer centered */
+.popup-arrow {
+  position: absolute;
+  top: 100%;
+  left: 20px; /* Moves arrow to the left side */
+  border-width: 10px;
+  border-style: solid;
+  border-color: #00ff41 transparent transparent transparent;
 }

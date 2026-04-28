@@ -277,8 +277,58 @@ h1.glass-text {
     }
 }
 
+/*-----------------------------------------------------------------------------*/
 
+/* Container to center the arrow at the bottom */
+.scroll-indicator {
+  position: absolute; /* Relative to the .portfolio3-section */
+  bottom: 30px;       /* Distance from the bottom of the section */
+  left: 50%;          /* Move to the horizontal center */
+  transform: translateX(-50%); /* Offset by its own width for perfect alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  z-index: 10;        /* Ensure it sits above other elements */
+}
 
+/* Ensure the parent section allows absolute positioning */
+.portfolio3-section {
+  position: relative;
+  height: 100vh;      /* Or whatever height your section is */
+  overflow: hidden;
+}
 
+.arrow {
+  width: 25px;
+  height: 25px;
+  
+  /* Cyberpunk Yellow */
+  border-right: 4px solid #fcee0a;
+  border-bottom: 4px solid #fcee0a;
+  
+  transform: rotate(45deg);
+  margin: -10px 0; /* Brings the arrows closer together */
+  
+  /* Neon Glow Effect */
+  filter: drop-shadow(0 0 5px #fcee0a) drop-shadow(0 0 10px #fcee0a);
+  
+  /* Blinking Animation */
+  animation: cyberBlink 1.5s infinite ease-in-out;
+}
 
+/* Stagger the second arrow animation for a "flow" effect */
+.arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
 
+@keyframes cyberBlink {
+  0%, 100% {
+    opacity: 0.2;
+    transform: rotate(45deg) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.1);
+  }
+}
